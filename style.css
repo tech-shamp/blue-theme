@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Codec Pro";
+  font-weight: 300;
+  src: url("../fonts/codec-pro.regular.woff2");
+}
+:root {
+  --color-bg: #101728;
+  --color-text: #0f1819;
+  --color-blue: #1f41bb;
+  --color-purple: #260e69;
+  --color-magenta: #9340ff;
+  --color-pink: #ff3c5f;
+  --color-white: #fff;
+
+  --btn: linear-gradient(to left, var(--color-pink), var(--color-blue));
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  color: var(--color-white);
+  background: var(--color-bg);
+  font-family: "Codec Pro";
+  transition: all 1s;
+}
+.container {
+  max-width: 1920px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+}
+.logo {
+  color: var(--color-white);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+}
+.logo span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  padding: 0.8rem;
+}
