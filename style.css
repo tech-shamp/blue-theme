@@ -1,8 +1,14 @@
 @font-face {
   font-family: "Codec Pro";
   font-weight: 300;
-  src: url("../fonts/codec-pro.regular.woff2");
+  src: url("fonts/CodecPro-regular.woff2");
 }
+@font-face {
+  font-family: "Codec Pro";
+  font-weight: 900;
+  src: url("fonts/CodecPro-ExtraBold.woff2");
+}
+
 :root {
   --color-bg: #101728;
   --color-text: #0f1819;
@@ -28,26 +34,16 @@ body {
   color: var(--color-white);
   background: var(--color-bg);
   font-family: "Codec Pro";
-  transition: all 1s;
 }
-.container {
-  max-width: 1920px;
-  width: 80%;
-  margin: 0 auto;
-  padding: 1.2rem 0;
-}
-.logo {
-  color: var(--color-white);
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-.logo img {
-  width: 50px;
-}
-.logo span {
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 0.05rem;
-  padding: 0.8rem;
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(var(--color-blue) 30%, var(--color-bg) 70%);
 }
